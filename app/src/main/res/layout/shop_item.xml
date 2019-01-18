@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView android:id="@+id/news_thumb"
+        android:layout_width="130dp"
+        android:layout_height="110dp"
+        android:layout_margin="5dp"
+        />
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="店铺名:" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/news_title"
+                android:textSize="16sp"  />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="菜品名:" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/news_info"
+                android:textSize="14sp"  />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="单价（元）:" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/price"
+                android:textSize="14sp"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/news_btn_detail"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:text="详情"
+                android:layout_gravity="right"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorMain"/>
+
+            <Button
+                android:id="@+id/news_btn_order"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:text="购买"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorMain"/>
+
+            <Button
+                android:id="@+id/btn_collect"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:text="收藏"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorMain"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

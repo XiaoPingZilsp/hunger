@@ -1,0 +1,59 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:background="@color/colorMain"
+
+            android:text="返回"
+            android:id="@+id/btn_back" />
+
+        <TextView
+            android:id="@+id/webchattoptitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMain"
+            android:gravity="center_horizontal"
+            android:padding="11dp"
+            android:text="收藏列表"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/activity_bottom_margin"
+        >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_info" />
+
+        <ListView
+            android:id="@+id/listView4"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

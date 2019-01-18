@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="70dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/metoptitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMain"
+            android:gravity="center_horizontal"
+            android:padding="11dp"
+            android:text="菜品评价"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="30px"
+
+            >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/haishen"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="订单编号:" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/order_id" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="菜品名:" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/foodname" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="应付金额:" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sum" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="配送地址:" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/address" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:background="@color/colorMain"
+            android:text="评价：" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="162dp"
+            android:gravity="center"
+           android:hint="评价内容"
+            android:id="@+id/content" />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white">
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="确定"
+                android:layout_marginLeft="90dp"
+                android:background="@color/colorMain"
+                android:id="@+id/btn_ok" />
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="取消"
+                android:background="@color/colorMain"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btn_cancel" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

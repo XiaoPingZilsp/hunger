@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/gray"
+    android:orientation="vertical" >
+    
+
+    <TextView
+        android:id="@+id/metoptitle"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMain"
+        android:gravity="center_horizontal"
+        android:padding="11dp"
+        android:text="订单确认"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:id="@+id/food_pic"
+                android:src="@drawable/r"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:gravity="center"
+                        android:text="菜品名:" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:textSize="22sp"
+                        android:id="@+id/food_name_dingdan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:text="单价（元）:" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:textSize="18sp"
+                        android:id="@+id/food_price_dingdan"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="输入数量"
+                        android:text="1"
+                        android:ems="10"
+                        android:id="@+id/num_dingdan" />
+
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="确认数量"
+                        android:id="@+id/order_num"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_marginTop="1dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="姓名:" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:textSize="24sp"
+                android:id="@+id/username_dingdan"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="配送地址:" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textSize="18sp"
+                android:id="@+id/address_dingdan"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textSize="18sp"
+                android:text="下单时间："
+                android:id="@+id/tv" />
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ordertime"
+                android:textSize="18sp"
+                android:layout_gravity="bottom" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:textSize="24sp"
+            android:text="总计："
+          />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textSize="24sp"
+            android:id="@+id/result"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white">
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="确定"
+            android:layout_marginLeft="90dp"
+            android:background="@color/colorMain"
+            android:id="@+id/btn_ok_dingdan" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="取消"
+            android:background="@color/colorMain"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_cancel_dingdan" />
+    </LinearLayout>
+
+
+</LinearLayout>

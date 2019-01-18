@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">手机订餐app</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login_fragment">LoginFragment</string>
+    <string name="username_msg">用户名</string>
+    <string name="user_phone">联系电话</string>
+    <string name="user_address">配送地址</string>
+    <string name="password_msg">登录密码</string>
+</resources>
